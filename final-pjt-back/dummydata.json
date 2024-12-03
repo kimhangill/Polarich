@@ -1,0 +1,74 @@
+[
+    {
+        "model": "accounts.user",
+        "pk": 3,
+        "fields": {
+          "username": "student_user",
+          "password": "pbkdf2_sha256$216000$hashvalue",
+          "is_superuser": false,
+          "is_staff": false,
+          "is_active": true,
+          "nickname": "student_nickname_1"
+        }
+      },
+      {
+        "model": "accounts.user",
+        "pk": 4,
+        "fields": {
+          "username": "self_employed_user",
+          "password": "pbkdf2_sha256$216000$hashvalue",
+          "is_superuser": false,
+          "is_staff": false,
+          "is_active": true,
+          "nickname": "self_employed_nickname_1"
+        }
+      },
+      {
+        "model": "accounts.portfolio",
+        "pk": 1,
+        "fields": {
+          "user": 3,
+          "salary_range": "below_24m",
+          "occupation": "student",
+          "investment_risk_profile": "conservative",
+          "financial_goal": "education",
+          "preferred_investment_period": "short",
+          "liquidity_preference": "high",
+          "risk_tolerance": 1,
+          "created_at": "2024-11-18T00:00:00",
+          "updated_at": "2024-11-18T00:00:00"
+        }
+      },
+      {
+        "model": "accounts.portfolio",
+        "pk": 2,
+        "fields": {
+          "user": 4,
+          "salary_range": "50m_to_70m",
+          "occupation": "self_employed",
+          "investment_risk_profile": "moderate",
+          "financial_goal": "investment",
+          "preferred_investment_period": "long",
+          "liquidity_preference": "low",
+          "risk_tolerance": 2,
+          "created_at": "2024-11-18T00:00:00",
+          "updated_at": "2024-11-18T00:00:00"
+        }
+      },
+    {
+      "model": "accounts.user_savings",
+      "pk": 1,
+      "fields": {
+        "user_id": 3,
+        "savingproducts_id": 1
+      }
+    },
+    {
+      "model": "accounts.user_deposits",
+      "pk": 2,
+      "fields": {
+        "user_id": 4,
+        "depositproducts_id": 10
+      }
+    }
+  ]
